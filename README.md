@@ -88,3 +88,21 @@ The Airbnb Clone Backend is a robust, scalable, and production-ready API-driven 
 - Set up CI/CD pipelines.  
 - Automate deployment and infrastructure management.  
 - Monitor application performance and reliability.
+
+- ## Technology Stack
+
+- **Django:** A high-level Python web framework used for building the RESTful API. It provides a clean and efficient way to handle backend operations and makes it easy to develop complex applications quickly.
+
+- **Django REST Framework:** A powerful toolkit that extends Django's capabilities, allowing for the creation and management of RESTful APIs. It simplifies the process of developing APIs by offering features like authentication, serialization, and view sets.
+
+- **PostgreSQL:** A robust, open-source relational database management system. It stores and organizes the application's data, offering strong consistency, reliability, and scalability.
+
+- **GraphQL:** A query language for APIs that enables clients to request only the data they need. It provides a more flexible and efficient way to query the backend compared to RESTful APIs.
+
+- **Celery:** A distributed task queue that helps manage asynchronous tasks like sending email notifications, processing payments, or handling long-running operations. It allows the application to perform tasks in the background without affecting user experience.
+
+- **Redis:** A powerful in-memory data structure store used for caching and managing sessions. It helps optimize the performance of the application by reducing database load and speeding up frequently accessed data retrieval.
+
+- **Docker:** A containerization platform that ensures consistent development, testing, and production environments. Docker makes it easy to package the application and its dependencies into containers that can be run anywhere.
+
+- **CI/CD Pipelines:** Continuous Integration and Continuous Deployment tools automate the testing and deployment processes. This ensures that the latest code changes are consistently tested and deployed in a reliable and timely manner.
