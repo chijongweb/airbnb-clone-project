@@ -1,24 +1,90 @@
 # airbnb-clone-project
 airbnb clone project
 
-Project Overview:
-The Airbnb Clone Backend is a robust, scalable, and production-ready API-driven system that powers a platform similar to Airbnb. It enables interactions between users and hosts, covering everything from property listings and bookings to secure payments and user reviews.This project is built to mirror real-world backend architecture, promoting clean code practices, efficient database design, and a focus on maintainability.
+## Project Overview
 
-Project Goals:
-User Management: Secure registration, authentication, and profile handling.
-Property Management: Full CRUD support for property listings.
-Booking System: Booking creation, updates, and cancellation workflows.
-Payment Processing: Integration of payment logic for handling transactions.
-Review System: Posting and managing reviews and ratings.
-Data Optimization: Fast and scalable database operations using indexing and caching.
+The Airbnb Clone Backend is a robust, scalable, and production-ready API-driven system that powers a platform similar to Airbnb. It enables interactions between users and hosts, covering everything from property listings and bookings to secure payments and user reviews. This project is built to mirror real-world backend architecture, promoting clean code practices, efficient database design, and a focus on maintainability.
+
+### Project Goals:
+- **User Management:** Secure registration, authentication, and profile handling.
+- **Property Management:** Full CRUD support for property listings.
+- **Booking System:** Booking creation, updates, and cancellation workflows.
+- **Payment Processing:** Integration of payment logic for handling transactions.
+- **Review System:** Posting and managing reviews and ratings.
+- **Data Optimization:** Fast and scalable database operations using indexing and caching.
+
+### Tech Stack:
+- **Framework:** Django & Django REST Framework
+- **Database:** PostgreSQL
+- **Caching & Sessions:** Redis
+- **Asynchronous Tasks:** Celery
+- **API Types:** REST (OpenAPI/Swagger) & GraphQL (Graphene)
+- **Containerization:** Docker & Docker Compose
+- **CI/CD:** GitHub Actions (or any CI tool of choice)
+- **Deployment:** (Optional: AWS, Heroku, DigitalOcean, etc.)
 
 
-Tech Stack:
-Framework: Django & Django REST Framework
-Database: PostgreSQL
-Caching & Sessions: Redis
-Asynchronous Tasks: Celery
-API Types: REST (OpenAPI/Swagger) & GraphQL (Graphene)
-Containerization: Docker & Docker Compose
-CI/CD: GitHub Actions (or any CI tool of choice)
-Deployment: (Optional: AWS, Heroku, DigitalOcean, etc.)
+## Team Roles
+
+### 1. Business Analyst (BA)
+**Description:** Understands business needs and translates them into technical requirements.  
+**Responsibilities:**
+- Analyze business processes and workflows.  
+- Gather and document functional requirements.  
+- Bridge communication between stakeholders and the development team.
+
+### 2. Product Owner (PO)
+**Description:** Owns the product vision and ensures it aligns with customer and business goals.  
+**Responsibilities:**
+- Define and prioritize the product backlog.  
+- Ensure the product meets user needs.  
+- Make key decisions about features and scope.
+
+### 3. Project Manager (PM)
+**Description:** Oversees the planning and delivery of the project to ensure it’s completed on time and within scope.  
+**Responsibilities:**
+- Manage timelines, resources, and budgets.  
+- Coordinate tasks and team activities.  
+- Communicate progress and resolve project issues.
+
+### 4. UI/UX Designer
+**Description:** Designs intuitive and engaging user interfaces and experiences.  
+**Responsibilities:**
+- Conduct user research and create user personas.  
+- Design wireframes, prototypes, and UI elements.  
+- Ensure a smooth and accessible user experience.
+
+### 5. Software Architect
+**Description:** Defines the system’s high-level design and technical standards.  
+**Responsibilities:**
+- Select tools and technologies.  
+- Design the software architecture.  
+- Ensure scalability, security, and maintainability.
+
+### 6. Software Developer
+**Description:** Writes code and builds the functionality of the application.  
+**Responsibilities:**
+- Develop front-end and/or back-end features.  
+- Fix bugs and improve performance.  
+- Collaborate with other roles to implement requirements.
+
+### 7. Quality Assurance (QA) Engineer
+**Description:** Tests the software to ensure it functions correctly and meets requirements.  
+**Responsibilities:**
+- Perform manual and automated testing.  
+- Identify and report bugs.  
+- Ensure the product meets quality standards.
+
+### 8. Test Automation Engineer
+**Description:** Automates test processes to improve testing efficiency and consistency.  
+**Responsibilities:**
+- Write and maintain automated test scripts.  
+- Design a maintainable automation framework.  
+- Integrate testing into the CI/CD pipeline.
+
+### 9. DevOps Engineer
+**Description:** Facilitates smooth integration between development and operations teams.  
+**Responsibilities:**
+- Set up CI/CD pipelines.  
+- Automate deployment and infrastructure management.  
+- Monitor application performance and reliability.
