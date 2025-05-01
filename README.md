@@ -107,3 +107,73 @@ The Airbnb Clone Backend is a robust, scalable, and production-ready API-driven 
 - **Docker:** A containerization platform that ensures consistent development, testing, and production environments. Docker makes it easy to package the application and its dependencies into containers that can be run anywhere.
 
 - **CI/CD Pipelines:** Continuous Integration and Continuous Deployment tools automate the testing and deployment processes. This ensures that the latest code changes are consistently tested and deployed in a reliable and timely manner.
+
+## Database Design
+
+### Key Entities:
+
+#### 1. **User**
+   - **user_id:** Unique identifier for each user (Primary Key).
+   - **email:** Email address of the user (Unique, used for authentication).
+   - **password:** User's hashed password for authentication.
+   - **first_name:** User’s first name.
+   - **last_name:** User’s last name.
+   - **is_host:** Boolean value indicating if the user is a host (can list properties).
+   
+   **Relationships:**
+   - A user can have multiple properties (one-to-many relationship with Properties).
+   - A user can make multiple bookings (one-to-many relationship with Bookings).
+   - A user can post multiple reviews (one-to-many relationship with Reviews).
+
+#### 2. **Property**
+   - **property_id:** Unique identifier for each property (Primary Key).
+   - **title:** Title of the property listing.
+   - **description:** A brief description of the property.
+   - **price_per_night:** The price for renting the property per night.
+   - **user_id:** Foreign Key referencing the owner (User).
+   - **location:** Address or general location of the property.
+   
+   **Relationships:**
+   - A property belongs to one user (many-to-one relationship with User).
+   - A property can have multiple bookings (one-to-many relationship with Bookings).
+   - A property can have multiple reviews (one-to-many relationship with Reviews).
+
+#### 3. **Booking**
+   - **booking_id:** Unique identifier for each booking (Primary Key).
+   - **user_id:** Foreign Key referencing the user who made the booking.
+   - **property_id:** Foreign Key referencing the property being booked.
+   - **check_in_date:** The date when the booking starts.
+   - **check_out_date:** The date when the booking ends.
+   
+   **Relationships:**
+   - A booking is associated with one user (many-to-one relationship with User).
+   - A booking is associated with one property (many-to-one relationship with Property).
+   
+#### 4. **Review**
+   - **review_id:** Unique identifier for each review (Primary Key).
+   - **user_id:** Foreign Key referencing the user who wrote the review.
+   - **property_id:** Foreign Key referencing the property being reviewed.
+   - **rating:** Numeric rating (e.g., 1 to 5 stars).
+   - **comment:** Text review written by the user.
+   
+   **Relationships:**
+   - A review is associated with one user (many-to-one relationship with User).
+   - A review is associated with one property (many-to-one relationship with Property).
+
+#### 5. **Payment**
+   - **payment_id:** Unique identifier for each payment (Primary Key).
+   - **booking_id:** Foreign Key referencing the booking associated with the payment.
+   - **payment_date:** The date the payment was processed.
+   - **amount:** The total amount paid for the booking.
+   - **payment_method:** The method used for payment (e.g., Credit Card, PayPal).
+   
+   **Relationships:**
+   - A payment is associated with one booking (one-to-one relationship with Booking).
+
+### Relationships Summary:
+- **User to Properties:** One-to-many (A user can have multiple properties).
+- **User to Bookings:** One-to-many (A user can make multiple bookings).
+- **User to Reviews:** One-to-many (A user can post multiple reviews).
+- **Property to Bookings:** One-to-many (A property can have multiple bookings).
+- **Property to Reviews:** One-to-many (A property can have multiple reviews).
+- **Booking to Payment:** One-to-one (Each booking has one payment associated).
