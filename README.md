@@ -89,13 +89,14 @@ The Airbnb Clone Backend is a robust, scalable, and production-ready API-driven 
 - Automate deployment and infrastructure management.  
 - Monitor application performance and reliability.
 
-- ## Technology Stack
+
+## Technology Stack
 
 - **Django:** A high-level Python web framework used for building the RESTful API. It provides a clean and efficient way to handle backend operations and makes it easy to develop complex applications quickly.
 
-- **Django REST Framework:** A powerful toolkit that extends Django's capabilities, allowing for the creation and management of RESTful APIs. It simplifies the process of developing APIs by offering features like authentication, serialization, and view sets.
+- **Django REST Framework:** A toolkit that extends Django's capabilities, allowing for the creation and management of RESTful APIs. It simplifies the process of developing APIs by offering features like authentication, serialization, and view sets.
 
-- **PostgreSQL:** A robust, open-source relational database management system. It stores and organizes the application's data, offering strong consistency, reliability, and scalability.
+- **PostgreSQL:** A powerful, open-source relational database management system. It stores and organizes the application's data, offering strong consistency, reliability, and scalability.
 
 - **GraphQL:** A query language for APIs that enables clients to request only the data they need. It provides a more flexible and efficient way to query the backend compared to RESTful APIs.
 
